@@ -32,6 +32,8 @@ public class Main
     PluginManager pm = getServer().getPluginManager();
     pm.registerEvents(this, this);
     File config = new File(getDataFolder() + File.separator + "config.yml");
+    @SuppressWarnings("unused")
+	File data = new File(getDataFolder() + File.separator + "data.yml");
     if (!config.exists())
     {
       getLogger().info("Generating config.yml");
