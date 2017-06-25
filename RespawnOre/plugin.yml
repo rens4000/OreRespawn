@@ -1,0 +1,20 @@
+name: OreRespawn
+version: 4.2.1
+main: me.boykev.respawnore.Main
+author: Boykev
+website: https://www.gewoonhdgaming.nl
+commands:
+   ore_reload:
+      description: Herlaad de configuratie.
+      usage: /<command>
+      permission: OreRespawn.reload
+      permission-message: You don't have the OreRespawn.reload Permission
+      
+permissions:
+    OreRespawn.*:
+        description: Toegang tot alle commando's van de OreRespawner
+        children:
+            OreRespawn.reload: true
+    OreRespawn.reload:
+        description: Geeft reload rechten
+        default: op
